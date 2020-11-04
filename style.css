@@ -48,6 +48,7 @@ footer {
 
 small {
 	font-size: 10px;
+	color: white;
 }
 .main-content {
 	background: white;
@@ -74,13 +75,6 @@ small {
 	color: white;
 }
 
-.footer-content{
-	color: rgba(1, 33, 105, 1)
-}
-.footer-content-js{
-	color: rgba(255, 255, 255, 1)
-}
-
 .content-img{
 	max-width: 600px;
 	border-radius:20px;
@@ -98,4 +92,8 @@ small {
 .enlarge-img {
 	max-width:800px;
 	border: 5px solid rgba(1,30,70,1);
+}
+
+.hidden {
+	display: none;
 }

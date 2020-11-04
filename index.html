@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <head>
+	<!-- // Uncomment when allowed to use jQuery // 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	-->
 	<link href="https://fonts.googleapis.com/css2?family=B612&family=Permanent+Marker&display=swap" rel="stylesheet">
 	<link href="/Users/eramsay/Desktop/Github Files/AboutMeWebsite/style.css" rel="stylesheet">
 </head>
@@ -25,7 +27,7 @@
 		<img class="content-img" src="https://i.imgur.com/6RicMVw.png">
 	</div>
 	<div class="content">
-		<p> Fortunately I had a family that pushed me into education, despite not having gone to college themselves. After highschool I attended Bowdoin College in Brunswick, ME where I graduated in 2014 with a Bachelors in Economics. <br /><br />(What a good looking crew... move your cursor on pic for a closer look!) </p>
+		<p> Fortunately I had a family that pushed me into education, despite not having gone to college themselves. After highschool I attended Bowdoin College in Brunswick, ME where I graduated in 2014 with a Bachelors in Economics.</p>
    		<img class="content-img" src="https://scontent-iad3-1.xx.fbcdn.net/v/t31.0-8/10368799_10154154220225043_6428889090614010866_o.jpg?_nc_cat=106&ccb=2&_nc_sid=cdbe9c&_nc_ohc=fk7iZ0ztrBYAX-rxoMb&_nc_ht=scontent-iad3-1.xx&oh=01a450c34da59885703130a065e82e7b&oe=5FC4E252">
 	</div>
    <div class="content">
@@ -56,17 +58,23 @@
    		<p> Want to learn more? Subscribe below for the latest and greatest!</p>
 	</div>
 	<input type="email" placeholder="Your email">
-	<input class="submit-button" type="submit">
-	<footer class = "footer-content">
-		<small>[Psych! These inputs don't actually do anything meaningful. But thanks for trying! (lol)] </small><br /><br />
+	<button onclick="showMessage()">Submit</button>
+	<footer>
+		<small class="hidden">Psych! This button does not actually submit anything. Thanks for trying though!</small><br /><br />
 	</footer>
 	<script>
-		$('a img').on('mouseenter', function() {$(this).addClass('enlarge-social'); }).on('mouseleave', function(){ $(this).removeClass('enlarge-social'); });
-		$('img.content-img').on('mouseenter', function() {$(this).addClass('enlarge-img'); }).on('mouseleave', function(){ $(this).removeClass('enlarge-img'); });
-		$('input').on('click', function(){
-			$('footer').removeClass('footer-content');
-			$('footer').addClass('footer-content-js');
-		
-		});
+		function showMessage() {
+  			var x = document.querySelector(".hidden");
+   					 x.style.display = "block";
+		}
 	</script>
 </body>
+
+ <!-- ** I originally had put together interaction items below, but when going to submit the assignment saw the note NOT to use jQuery. So I kept them in as comments anyways for future reference. **
+		---// (1) make social media icon links slightly larger when hovering over them //
+		$('a img').on('mouseenter', function() {$(this).addClass('enlarge-social'); }).on('mouseleave', function(){ $(this).removeClass('enlarge-social'); });
+		
+		// (2) make content images larger when hovering over them //
+		$('img.content-img').on('mouseenter', function() {$(this).addClass('enlarge-img'); }).on('mouseleave', function(){ $(this).removeClass('enlarge-img'); });
+		---
+ -->
