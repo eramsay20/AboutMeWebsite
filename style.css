@@ -3,9 +3,9 @@ body {
 	font-family: 'B612', sans-serif;
 	margin: 0 auto;
 	padding: 0px;
-	background: linear-gradient(bottom, rgba(1, 33, 105, 1), rgba(1,33,105,.7));
-	background: -webkit-linear-gradient(bottom, rgba(1, 33, 105, 1), rgba(1,33,105,.7));
-	background: -moz-linear-gradient(bottom,  rgba(1, 33, 105, 1), rgba(1,33,105,.7));
+	background: linear-gradient(bottom, rgba(1, 33, 105, 1), rgba(1,33,105,.5));
+	background: -webkit-linear-gradient(bottom, rgba(1, 33, 105, 1), rgba(1,33,105,.5));
+	background: -moz-linear-gradient(bottom,  rgba(1, 33, 105, 1), rgba(1,33,105,.3));
 }
 header{
 	background:URL("https://images.unsplash.com/photo-1561736778-92e52a7769ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
@@ -82,4 +82,13 @@ small {
 .social-img{
 	max-width: 35px;
 	border-radius:10px;
+}
+
+.enlarge-social {
+	max-width:50px;
+}
+
+.enlarge-img {
+	max-width:800px;
+	border: 5px solid rgba(1,30,70,1);
 }
