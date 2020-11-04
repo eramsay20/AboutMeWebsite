@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<link href="https://fonts.googleapis.com/css2?family=B612&family=Permanent+Marker&display=swap" rel="stylesheet">
 	<link href="/Users/eramsay/Desktop/Github Files/AboutMeWebsite/style.css" rel="stylesheet">
 </head>
@@ -55,6 +56,13 @@
 	<input type="email" placeholder="Your email">
 	<input type="submit">
 	<footer class = "content">
-	
 	</footer>
+	<script>
+		$('a img').on('mouseenter', function() {$(this).addClass('enlarge-social'); }).on('mouseleave', function(){ $(this).removeClass('enlarge-social'); });
+		$('img.content-img').on('mouseenter', function() {$(this).addClass('enlarge-img'); }).on('mouseleave', function(){ $(this).removeClass('enlarge-img'); });
+	</script>
 </body>
+
+<!--$('div')
+  .on('mouseenter', function(){ $(this).addClass('red'); })
+  .on('mouseleave', function(){ $(this).removeClass('red'); });-->
