@@ -74,6 +74,13 @@ small {
 	color: white;
 }
 
+.footer-content{
+	color: rgba(1, 33, 105, 1)
+}
+.footer-content-js{
+	color: rgba(255, 255, 255, 1)
+}
+
 .content-img{
 	max-width: 600px;
 	border-radius:20px;

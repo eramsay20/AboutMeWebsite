@@ -23,7 +23,7 @@
 		<img class="content-img" src="https://i.imgur.com/6RicMVw.png">
 	</div>
 	<div class="content">
-		<p> Fortunately I had a family that pushed me into education, despite not having gone to college themselves. After highschool I attended Bowdoin College in Brunswick, ME where I graduated in 2014 with a Bachelors in Economics. </p>
+		<p> Fortunately I had a family that pushed me into education, despite not having gone to college themselves. After highschool I attended Bowdoin College in Brunswick, ME where I graduated in 2014 with a Bachelors in Economics. <br /><br />(What a good looking crew... move your cursor on pic for a closer look!) </p>
    		<img class="content-img" src="https://scontent-iad3-1.xx.fbcdn.net/v/t31.0-8/10368799_10154154220225043_6428889090614010866_o.jpg?_nc_cat=106&ccb=2&_nc_sid=cdbe9c&_nc_ohc=fk7iZ0ztrBYAX-rxoMb&_nc_ht=scontent-iad3-1.xx&oh=01a450c34da59885703130a065e82e7b&oe=5FC4E252">
 	</div>
    <div class="content">
@@ -39,11 +39,11 @@
    		<img class="content-img" src="https://i.imgur.com/V9vQ7aZ.png">
 	</div>
    <div class="content">  
-		<p> In my two years with the company I participated in its growth from ~130 people worth $78M into an industry-leading Series E round valued at $1.7B and 500+ employees! Needless to say, it was one hell of a journey crunched into a short period, but a rewarding one nonetheless. Carta helped me grow personally, professionally, and introduced me to some of the sharpest minds in tech I've ever met. </p>
+		<p> In my two years with the company I participated in its growth from ~130 people worth $78M into an industry-leading Series E round valued at $1.7B and 500+ employees! Needless to say, it was one hell of a journey crunched into a short period, but a rewarding one nonetheless. In valuations I was able to interview board members of hundreds of startup companies and learn what made them tick. Competitive advantage, past and forecasted revenues, cash runway, cap tables, growth strategies, and more! I had an inside track to it all, learning the ins and outs of each company directly from the founders. That's because its only possible to value a private company when you have a full, holistic view of where a company is today and where its founders believe its headed. In this role, Carta helped me grow personally, professionally, and introduced me to some of the sharpest minds in tech I've ever met. </p>
    		<img class="content-img" src="https://i.imgur.com/UyzWRxv.png">
 	</div>
    <div class="content">  
-	   	<p> But after grinding for years, I found something was missing. After years of travel and demanding jobs that took me around the world, I missed my homebase. I had been away from family for nearly 5 years, prioritizing my career over all else. Having been married a few years with parents and grandparents growing older, my wife and I decided to try and set roots closer to my family who had all relocated to Maryland while I was away. As you can probably imagine, Baltimore's job market didn't offer the same landscape available to me on the West coast, and over the past year I've looked into other career options that have interested me over the years, including real estate investing. But after only a year away from tech, I found I really miss it, and once again have an itch to challenge myself in a new endeavor that will hopefully return me to my roots: becoming a full-stack software engineer!  </p>
+	   	<p> But after grinding for years, I found something was missing. Reflecting on my years of travel in demanding jobs that took me around the world, I realized I missed my homebase. I had been away from family for nearly 5 years, prioritizing my career over all else. Having been married a few years with parents and grandparents growing older, my wife and I decided to try and set roots closer to my family who had all relocated to Maryland while I was away. As you can probably imagine, Baltimore's job market didn't offer the same landscape available to me on the West coast, and over the past year I've looked into other career options that have interested me over the years, including real estate investing. But after only a year away from tech, I found I really miss it, and once again have an itch to challenge myself in a new endeavor that will hopefully return me to my roots: becoming a full-stack software engineer!  </p>
    		<img class="content-img" src="https://i.pinimg.com/originals/ef/37/2d/ef372d4654804370730e6c39b323a194.jpg">
 	</div>
    <div class="content">  
@@ -51,18 +51,20 @@
    		<img class="content-img" src="https://news.efinancialcareers.com/binaries/content/gallery/efinancial-careers/articles/2019/03/programmer.jpg">
 	</div>
 	<div class="content">
-   		<p> Want to learn more? Subscribe below for the latest and greatest! <br /><br /><small>[But not actually. The submit button does nothing. Thanks for stopping by! (lol)] </small></p>
+   		<p> Want to learn more? Subscribe below for the latest and greatest!</p>
 	</div>
 	<input type="email" placeholder="Your email">
-	<input type="submit">
-	<footer class = "content">
+	<input class="submit-button" type="submit">
+	<footer class = "footer-content">
+		<small>[Psych! These inputs don't actually do anything meaningful. But thanks for trying! (lol)] </small><br /><br />
 	</footer>
 	<script>
 		$('a img').on('mouseenter', function() {$(this).addClass('enlarge-social'); }).on('mouseleave', function(){ $(this).removeClass('enlarge-social'); });
 		$('img.content-img').on('mouseenter', function() {$(this).addClass('enlarge-img'); }).on('mouseleave', function(){ $(this).removeClass('enlarge-img'); });
+		$('input').on('click', function(){
+			$('footer').removeClass('footer-content');
+			$('footer').addClass('footer-content-js');
+		
+		});
 	</script>
 </body>
-
-<!--$('div')
-  .on('mouseenter', function(){ $(this).addClass('red'); })
-  .on('mouseleave', function(){ $(this).removeClass('red'); });-->
