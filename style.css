@@ -14,8 +14,9 @@ header{
 }
 
 p {
-	font-size: 15px;
+	font-size: 16px;
 	text-align: justify;
+	line-height: 24px;
 	margin: 0 auto;
 	max-width: 600px;
 	padding: 15px 0 15px 0;
@@ -32,6 +33,21 @@ a {
 	font-family: 'Permanent Marker', cursive;
 	color:rgba(1, 33, 105, 1);
 	padding: 10px;
+}
+
+p a {
+	font-size: 24px;
+	font-family: 'Permanent Marker', cursive;
+	color:white;
+	padding: 10px;
+}
+
+footer {
+	padding: 20px 0 0 0;
+}
+
+small {
+	font-size: 10px;
 }
 .main-content {
 	background: white;
@@ -61,4 +77,9 @@ a {
 .content-img{
 	max-width: 600px;
 	border-radius:20px;
+}
+
+.social-img{
+	max-width: 35px;
+	border-radius:10px;
 }
